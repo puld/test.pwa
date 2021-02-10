@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /opt/yarn-v1.22.5/bin/yarn.js install
+  /usr/local/bin/node /opt/yarn-v1.22.5/bin/yarn.js add push-dir --dev
 
 PATH: 
   /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /usr/src/app/package.json: Unexpected token } in JSON at position 455
+  SyntaxError: /usr/src/app/package.json: Unexpected token } in JSON at position 312
       at JSON.parse (<anonymous>)
       at /opt/yarn-v1.22.5/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -32,13 +32,9 @@ npm manifest:
       "start": "nuxt start",
       "docker": "docker build -t docker.yuik.ru/test/pwa . && docker push docker.yuik.ru/test/pwa",
       "generateDb": "node scripts/generateDb",
-      "serve": "http-server -c-1",
-  
-      "buildandstart": "cross-env NODE_ENV=production nuxt build && cross-env NODE_ENV=production nuxt start",
     },
     "devDependencies": {
-      "nodemon": "^2.0.7",
-      "nuxt-twa-module": "^1.3.1"
+      "nodemon": "^2.0.7"
     },
     "dependencies": {
       "@nuxtjs/axios": "^5.12.5",

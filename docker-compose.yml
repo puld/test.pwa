@@ -13,7 +13,9 @@ services:
       - NODE_ENV=development
     user: $UID:$GID
     command:
-#      bash -c "yarn install && yarn run dev"
-      bash -c "yarn run start"
-#      bash -c "yarn install && yarn run buildandstart"
-#      bash -c "yarn install && yarn run generate"
+#      bash -c "yarn add push-dir --dev"
+#      bash -c "yarn install"
+#      bash -c "yarn install --save-dev"
+#      bash -c "yarn run dev"
+#      bash -c "yarn run start"
+      bash -c "yarn run generate
