@@ -18,4 +18,4 @@ services:
 #      bash -c "yarn install --save-dev"
 #      bash -c "yarn run dev"
 #      bash -c "yarn run start"
-      bash -c "yarn run generate
+      bash -c "yarn run generate"
