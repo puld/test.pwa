@@ -1,0 +1,23 @@
+[
+  {
+    "name": "settings",
+    "path": "/settings",
+    "component": "/usr/src/app/pages/settings.vue",
+    "chunkName": "pages/settings",
+    "_name": "_58962f73"
+  },
+  {
+    "name": "songs-id",
+    "path": "/songs/:id?",
+    "component": "/usr/src/app/pages/songs/_id.vue",
+    "chunkName": "pages/songs/_id",
+    "_name": "_b23cfdee"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/usr/src/app/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e542f99c"
+  }
+]

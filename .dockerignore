@@ -1,0 +1,9 @@
+nbproject
+node_modules
+mongodb
+tmp
+test
+config
+.idea
+npm-debug*
+.nuxt

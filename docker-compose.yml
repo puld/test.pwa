@@ -1,0 +1,19 @@
+version: '3'
+services:
+  dev:
+    build: .
+    image: node:14
+    network_mode: host
+    ports:
+      - 3000:3000
+    volumes:
+      - ${PWD}:/usr/src/app
+    working_dir: /usr/src/app
+    environment:
+      - NODE_ENV=development
+    user: $UID:$GID
+    command:
+#      bash -c "yarn install && yarn run dev"
+      bash -c "yarn run start"
+#      bash -c "yarn install && yarn run buildandstart"
+#      bash -c "yarn install && yarn run generate"
