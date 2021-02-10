@@ -9,10 +9,11 @@
     "docker": "docker build -t docker.yuik.ru/test/pwa . && docker push docker.yuik.ru/test/pwa",
     "generateDb": "node scripts/generateDb",
 
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "push-dir": "^0.4.1"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
